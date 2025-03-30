@@ -1,29 +1,16 @@
-ArticleRetriever Project
------------------------
-## Objectives: 
-The goal of this project is to retrieve the latest 50 articles from TechCrunch and saves them to disk. The program is designed to: 
-- Scrape article data from the TechCrunch website.
-- Organize articles into folders based on their categories/field.
-- Save the article's title, URL and content into a text file. 
+Dynamic Website Articles Retriever
+----------------------------------
+A Java-based web scraper with a user-friendly GUI that automates the process of extracting and organizing articles from dynamic website, TechCrunch as an example. This project demonstrates skills in web scraping, GUI development, and file management while solving real-world problems related to data collection.
 
+Features:
+- Customizable Scraping: Specify the number of articles to scrape and the pause duration between requests.
+- Real-Time Feedback: View scraped article titles dynamically in the GUI log panel.
+- Automatic File Organization: Articles are saved as HTML files in categorized folders based on their topics (e.g., AI, Startups).
+- User-Friendly GUI: Built with Java Swing for ease of use, even for non-technical users.
+- Interruptible Scraping: Stop the scraping process at any time with the "Stop Scraping" button.
 
-## Tools and Libraries used:
-- Programming language: Java.
-- Libraries: HtmlUnit.
+Programming Language: Java
 
-## Instructions (if you decide to download the zip file):
-- Prerequisites: Have Java and HtmlUnit library installed (if not using Maven) 
-- Extract the .zip file.
-- Open the project in an IDE or compile and run it from the command line. 
-- Run the `ArticleRetriever.java` file.
-- The program will create a TechCrunch Articles folder in the project directory and save the retrieved articles into subfolders based on their categories. 
-
-## Notes for Local Execution
-If you decide to download and run the program in your local IDE or command line, the console will display detailed logs to help track the progress, which include the category, title, URL and count of each article as it's fetched. 
-
-## Known Issues
-Content fetching failure: The program was not able to fetch and save the specific content (paragraphs) due to issues (which I believe) regarding: 
-1. Line 88: The content's HTML path is incorrect, leading to failure in fetching the content.
-2. Line 112: FileWriter function is not overwriting the text files as expected. 
-Thus, only the title and URL are currently being written to the text files. 
-
+Libraries/Frameworks:
+- HtmlUnit (for headless browser-based web scraping)
+- Swing (for GUI development)
